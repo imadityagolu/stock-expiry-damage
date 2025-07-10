@@ -1,0 +1,72 @@
+.head {
+    font-size: 25px;
+    font-weight: 500;
+}
+.stockin{
+    background-color: rgb(210, 250, 237);
+    color: rgb(30, 230, 166);
+}
+
+.stockout{
+    background-color: rgb(255, 226, 215);
+    color: rgb(248, 107, 51);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+    .input-search {
+        width: 100px !important;
+    }
+    .input-date {
+        width: 100px !important;
+    }
+    .select-transaction {
+        width: 120px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 7px !important;
+    }
+    .head {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+    .input-search {
+        width: 80px !important;
+    }
+    .input-date {
+        width: 75px !important;
+    }
+    .select-transaction {
+        width: 95px !important;
+    }
+    .filter {
+        gap: 5px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 6px !important;
+    }
+    .head {
+        font-size: 11px !important;
+        font-weight: 500 !important;
+    }
+    .input-search {
+        width: 70px !important;
+    }
+    .input-date {
+        width: 70px !important;
+    }
+    .select-transaction {
+        width: 85px !important;
+    }
+    .filter {
+        gap: 2px !important;
+    }
+}
