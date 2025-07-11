@@ -1,0 +1,81 @@
+.dhead {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+    .dbody {
+        font-size: 11px;
+    }
+    .dinput-date {
+        width: 150px !important;
+    }
+}
+
+input[type="date"] {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .dbody {
+        font-size: 10px;
+    }
+    .dinput-date {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: 426px) {
+    .sbody {
+        font-size: 6px !important;
+    }
+    .dhead {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+    .dinput-date {
+        width: 60px !important;
+        padding: 5px !important;
+        border-radius: 5px !important;
+    }
+    .dfilter {
+        gap: 5px !important;
+    }
+}
+
+@media (max-width: 376px) {
+    .dbody {
+        font-size: 5px !important;
+    }
+    .dhead {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+    .dinput-date {
+        width: 50px !important;
+        padding: 5px !important;
+        border-radius: 5px !important;
+    }
+    .dfilter {
+        gap: 2px !important;
+    }
+}
+
+
+@media (max-width: 321px) {
+    .dbody {
+        font-size: 5px !important;
+    }
+    .dhead {
+        font-size: 7px !important;
+        font-weight: 500 !important;
+    }
+    .dinput-date {
+        width: 50px !important;
+        padding: 5px !important;
+        border-radius: 5px !important;
+    }
+    .dfilter {
+        gap: 2px !important;
+    }
+}

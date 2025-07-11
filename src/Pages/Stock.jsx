@@ -97,22 +97,25 @@ const status = (status) => {
 function Stock() {
   return (
     <div className='container-fluid'>
-        <div className='m-2 bg-white rounded-3'>
+        <div className='m-2 bg-white rounded-3 sbody'>
             
             {/* header */}
             <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', padding:'15px 15px', marginTop:'20px'}}>
 
                 <div>
-                    <span className='head'>Stocks In/Out</span>
+                    <span className='shead'>Stocks In/Out</span>
                 </div>
 
-                <div style={{display:'flex', gap:'15px'}} className='filter'>
+                <div style={{display:'flex', gap:'15px'}} className='sfilter'>
 
-                    <input type="text" placeholder='Search items here...' style={{borderRadius:'10px', border:'1px solid gray', padding:'10px', width:'400px', color:'gray'}} className='input-search' />
+                    <input type="text" placeholder='Search items here...' style={{borderRadius:'10px', border:'1px solid gray', padding:'10px', width:'400px', color:'gray'}} className='sinput-search' />
 
-                    <input type="date" placeholder='Date' style={{borderRadius:'10px', border:'1px solid gray',padding:'10px', width:'200px', color:'gray'}} className='input-date' />
+                    <div style={{borderRadius:'10px', border:'1px solid gray',padding:'10px', width:'200px', color:'gray'}}  className='sinput-date'>
+                    <label>Date</label>
+                    <input type="date" placeholder='Date' />
+                    </div>
 
-                    <select style={{borderRadius:'10px', border:'1px solid gray',padding:'10px', width:'200px', color:'gray'}} className='select-transaction'>
+                    <select style={{borderRadius:'10px', border:'1px solid gray',padding:'10px', width:'200px', color:'gray'}} className='sselect-transaction'>
                         <option>Transaction type</option>
                         <option>option 2</option>
                     </select>
@@ -141,7 +144,7 @@ function Stock() {
                                     <input type="checkbox"/>
                                 </div>
                                 <div>
-                                <span style={{color:'gray'}}>{e.name}</span>
+                                <span style={{color:'#007AFF'}}>{e.name}</span>
                                 <br/>
                                 <span style={{color:'gray'}}>(SKU)</span>
                                 </div>
@@ -161,17 +164,17 @@ function Stock() {
             <div style={{display:'flex', justifyContent:'space-between', padding:'5px 15px 20px', alignItems:'center'}}>
                 <div style={{display:'flex', gap:'10px'}}>
                     <span style={{color:'gray'}}>Result Per page</span> 
-                    <select style={{border:'1px solid gray', color:'gray'}}>
+                    <select style={{border:'1px solid gray', color:'gray', borderRadius:'5px'}}>
                         <option>10</option>
                         <option>20</option>
                     </select>
                 </div>
                 <div style={{display:'flex', gap:'10px', alignItems:'center'}}>
                     <GrFormPrevious style={{color:'#007AFF'}}/>
-                    <div style={{width:'150px'}}>
-                        <button style={{backgroundColor:'#007AFF', color:'white', border:'1px solid gray', width:'50px'}}>01</button>
-                        <button style={{border:'1px solid gray', width:'50px', color:'gray'}}>02</button>
-                        <button style={{border:'1px solid gray', width:'50px', color:'gray'}}>03</button>
+                    <div style={{}}>
+                        <button style={{backgroundColor:'#007AFF', color:'white', border:'1px solid gray'}}>01</button>
+                        <button style={{border:'1px solid gray', color:'gray'}}>02</button>
+                        <button style={{border:'1px solid gray', color:'gray'}}>03</button>
                     </div>
                     <MdNavigateNext style={{color:'#007AFF'}}/></div>
             </div>
