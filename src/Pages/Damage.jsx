@@ -1,6 +1,7 @@
 import './Damage.css';
 import { GrFormPrevious } from "react-icons/gr";
 import { MdNavigateNext } from "react-icons/md";
+import { MdDateRange } from "react-icons/md";
 
 const damageData = [
     {
@@ -91,9 +92,10 @@ function Damage() {
 
                 <div style={{display:'flex', gap:'15px'}} className='dfilter'>
 
-                    <div style={{borderRadius:'10px', border:'1px solid gray',padding:'10px', width:'200px', color:'gray'}}  className='dinput-date'>
-                    <label>Date</label>
-                    <input type="date" placeholder='Date' />
+                    <div style={{borderRadius:'10px', border:'1px solid gray',padding:'10px', width:'200px', color:'gray', display:'flex', justifyContent:'space-between', alignItems:'center'}}  className='dinput-date'>
+                        <label>Date</label>
+                        <input type="date" placeholder='Date' />
+                        <MdDateRange />
                     </div>
 
                 </div>
